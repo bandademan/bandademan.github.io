@@ -47,19 +47,16 @@
     }
   </style>
 </head>
+
+<script>
+fetch('header.html')
+  .then(response=> response.text())
+  .then(text=> document.getElementById('header').innerHTML = text);
+</script>
+
 <body>
 
-  <header>
-    <div class="title">
-      <h1>Matthew Aydlett</h1>
-    </div>
-    <nav>
-      <a href="#/Home">Home</a>
-      <a href="https://github.com/bandademan">Github</a>
-      <a href="/About.html">About</a>
-    </nav>
-  </header>
-
+<div id='header'> </div>
 
   <section>
     <h2>Section 1</h2>
